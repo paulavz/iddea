@@ -8,21 +8,31 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Meera+Inimai&display=swap" rel="stylesheet">
 </head>
 <body>
+	<input type="radio" class="languaje-input" name="languaje" id="es" checked>
+	<input type="radio" class="languaje-input" name="languaje" id="en">
 	<section id="home" class="principal">
 		<div class="fondo-translucido flex around">
 			<img class="menu-icon" draggable="false" src="images/menu.svg">
 			<div class="idioma flex">
-				ES
+				<p class="es">ES</p>
+				<p class="en">ES</p>
 				<img class="arrow" draggable="false" src="images/arrow-down.svg">
+				<div class="menu-idioma">
+					<label for="es">Español</label>
+					<label for="en">English</label>
+				</div>
 			</div>
 		</div>
 		<div class="titulo">
 			<h1 class="logo">
 				iddea
 			</h1>
-			<h4 class="subtext">
-				Ingeniería, diseño y desarrollos energéticos y ambientales
+			<h4 class="subtext en">
+				Energy and environmental engineering, design and developments
 			</h4>
+			<p class="subtext es">
+				Ingeniería, diseño y desarrollos energéticos y ambientales
+			</p>
 		</div>	
 		<div class="fondo-translucido">
 		</div>	
@@ -31,13 +41,14 @@
 		<div class="flex justify-center col">
 			<img class="infinity" draggable="false" src="images/infinito.svg">
 			<div class="text-infinity">
-				<div>LA ENEGÍA ES<span class="color-text"> INFINITA</span></div>	
+				<div class="es">LA ENEGÍA ES<span class="color-text"> INFINITA</span></div>
+				<div class="en">ENERGY IS<span class="color-text"> INFINITE</span></div>	
 			</div>		
 		</div>
 		<div class="fondotext">
-			<div class="texttitle">
+			<div class="texttitle margintitle">
 				<img class="adorno" draggable="false" src="images/adorno.svg">
-				NOSOTROS
+				<p class="es">NOSOTROS</p><p class="en">ABOUT US</p>
 			</div>
 			<div class="textabout">
 				<p>
@@ -57,24 +68,29 @@
 			<div class="ilustracion">
 				<img class="ilustracion-img" draggable="false" src="images/ilustracion.svg">	
 			</div>
-			<div class="text-ilustracion">
-				BUSCAMOS DEMOSTRAR QUE ES <span id="posible">POSIBLE</span> 
+			<div class="text-ilustracion es">
+				BUSCAMOS DEMOSTRAR QUE ES <span id="posible">POSIBLE</span>
+			</div>
+			<div class="text-ilustracion en">
+				We seek to demonstrate that <span id="posible">it is possible</span>
 			</div>
 		</div>
 	</section>
 	<section class="proyectos">
-			<div class="texttitle margintitle">
+			<div class="margintitle marginprojects">
 				<img class="adorno" draggable="false" src="images/adorno.svg">
-				PROYECTOS
+				<p class="texttitle es">PROYECTOS</p>
+				<h2 class="texttitle en">PROJECTS</h2>
 			</div>
 			<img class="imanes" src="images/imanes.png">
 			<div class="project-1">
-				DESARROLLO DE MOTOR MAGNÉTICO MIXTO
+				<span class="es">DESARROLLO DE MOTOR MAGNÉTICO MIXTO</span>
+				<span class="en">DEVELOPMENT OF MIXED MAGNETIC MOTOR</span>
 			</div>
 			<div class="flex col caracteristica">
-				<div class="cont-caract"><img class="size" src="images/tree.svg">ECOLÓGICO</div>
-				<div class="cont-caract"><img class="size" src="images/reloj.svg">DURADERO</div>
-				<div class="cont-caract"><img class="size" src="images/money.svg">ECONÓMICO</div>
+				<div class="cont-caract"><img class="size" src="images/tree.svg"><span class="es">ECOLÓGICO</span><span class="en">ECOLOGICAL</span></div>
+				<div class="cont-caract"><img class="size" src="images/reloj.svg"><span class="es">DURADERO</span><span class="en">DURABLE</span></div>
+				<div class="cont-caract"><img class="size" src="images/money.svg"><span class="es">ECONÓMICO</span><span class="en">ECONOMIC</span></div>
 			</div>
 	</section>
 </body>
