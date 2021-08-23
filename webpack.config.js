@@ -1,5 +1,4 @@
 const path = require("path");
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtract = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -10,6 +9,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "backend/public"),
     filename: "js/[name]/[name].bundle.js",
+    assetModuleFilename: 'images/[name][ext][query]',
     publicPath: '/'
   },
   mode: "development",
@@ -26,11 +26,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        loader: 'file-loader',
-        options: {
-          name:'[name].[ext]',
-          outputPath: './img/',
-        }
+        type: 'asset/resource',
       },
     ],
   },
