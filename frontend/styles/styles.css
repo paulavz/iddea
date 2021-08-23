@@ -104,6 +104,7 @@
 .text-infinity{
   display: flex;
   font-size: 50px;
+  justify-content: center;
 }
 
 .color-text{
@@ -193,4 +194,43 @@
 .proyectos{
   background-color: #2F2E41;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imanes{
+  position: relative;
+  z-index: 1;
+  width: 80%;
+}
+
+.project-1{
+  background-color: white;
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.7em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  border-radius: 10px;
+  position: relative;
+  bottom: 160px;
+  z-index: 0;
+}
+
+.caracteristica{
+  font-family: 'Meera Inimai', sans-serif;  
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.cont-caract{
+  height: 100px;
+}
+
+.size{
+  width: 100px;
 }
