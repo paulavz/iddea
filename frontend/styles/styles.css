@@ -114,6 +114,10 @@
   justify-content: center;
 }
 
+.justify-around{
+  justify-content: space-around;
+}
+
 .infinity{
   height: 200px;
   margin-top: 2em;
@@ -123,7 +127,7 @@
   display: flex;
   font-size: 50px;
   justify-content: center;
-  margin-bottom: 2em;
+  text-align: center;
 }
 
 .color-text{
