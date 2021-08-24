@@ -1,0 +1,27 @@
+.languaje-input {
+	display: none;
+}
+
+.en {
+  display: none;
+}
+
+.es {
+  display: none;
+}
+
+#en:checked ~ * .en {
+  display: inline-block;
+}
+
+#es:checked ~ * .es {
+  display: inline-block;
+}
+
+#en:checked ~ * .languaje-icon::after {
+  content: "EN";
+}
+
+#es:checked ~ * .languaje-icon::after {
+  content: "ES";
+}
