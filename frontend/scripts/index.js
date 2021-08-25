@@ -12,3 +12,10 @@ import tree from '../icons/tree.svg';
 import reloj from '../icons/reloj.svg';
 import money from '../icons/money.svg';
 import imanes from '../img/imanes.png';
+import instagram from '../icons/instagram.svg';
+import linkedin from '../icons/linkedin.svg';
+import facebook from '../icons/facebook.svg';
+import binance from '../icons/binance.svg';
+import paypal from '../icons/paypal.svg';
+
+

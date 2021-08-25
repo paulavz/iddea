@@ -11,9 +11,25 @@
   color: white;
 }
 
+.p-2{
+  padding: 2rem;
+}
+
+.vertical-center{
+  align-items: center;
+}
+
+.m-icon-top{
+  margin-top: 0.5rem;
+}
+
 .flex{
   display: flex;
   align-items: center;
+}
+
+.m-botton{
+  margin-bottom: 4rem;
 }
 
 .black{
@@ -153,8 +169,12 @@
   text-transform: uppercase;
 }
 
+.m-left{
+  margin-left: -60px;
+}
+
 .margintitle{
-  margin: 1em;
+  margin: 1rem;
 }
 
 .adorno{
@@ -231,14 +251,16 @@
   background-color: #2F2E41;
   height: 100vh;
   display: flex;
-  padding-top: 3em !important;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.marginprojects{
-  margin-top: 4em;
+.titleproject{
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .imanes{
@@ -265,13 +287,17 @@
   color: black;
 }
 
+.proy-img-1{
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .caracteristica{
   font-family: 'Meera Inimai', sans-serif;  
   font-size: 60px;
   font-weight: 400;
-  margin-bottom: 3em;
-  bottom: 2em;
-  position: relative;
 }
 
 .cont-caract{
@@ -295,9 +321,16 @@
   background-position: center;
   background-size: cover;
   height: 200vh;
-  margin-top: -5.5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  margin-top: -0.2rem;
+}
+
+.size-title{
+  height: 150px;
+}
+
+.margin-form{
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .form{
@@ -357,4 +390,102 @@
 
 .l-mesage{
   height: 300px;
+}
+
+.mini-section{
+  height: 100vh;
+}
+
+/***************************
+ * SECTION DONATION_FOOTER * 
+***************************/
+
+.space-between-complete{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer{
+  border-top: 5px solid white;
+  background-color: rgba(0, 0, 0, 0.62);
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.donacion{
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donacion-panel{
+  height: 40%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.62);
+  border-radius: 10px;
+}
+
+.text-donation{
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.sub-donation{
+  font-size: 1.9rem;
+}
+
+.r-socials{
+  height: 80%;
+}
+
+.r-icons{
+  height: 100px;
+  width: 100px;
+}
+
+.r-socials-text{
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.r-icons-container{
+  width: 50%;
+}
+
+.r-icons-center{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.final-text{
+  height: 20%;
+}
+
+.copyright{
+  font-size: 3rem;
+}
+
+.small-letter-container{
+}
+
+.donation-container{
+  height: 280px;
+}
+
+.m-icon-left{
+  margin-left: 2.5rem;
+}
+
+.size-icon-p{
+  height: 95px;
+}
+
+.margin-donation{
+  margin: 2.5rem;
 }
