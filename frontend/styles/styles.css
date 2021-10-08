@@ -1,43 +1,52 @@
-:root {
-   --bg-primary: #34d1bf;
-   --bg-secondary: #d1345b;
-   --bg-terceary: #3454d1;
-   --bg-white: #efefef;
-}
-
 * {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
 }
 
-.p-2{
-  padding: 2rem;
+.p-2 {
+  padding: 1rem;
 }
 
-.vertical-center{
+.vertical-center {
   align-items: center;
 }
 
-.m-icon-top{
+.m-icon-top {
   margin-top: 0.5rem;
 }
 
-.flex{
+.r-icons-b {
+  width: 60px;
+}
+
+.flex {
   display: flex;
   align-items: center;
 }
 
-.m-botton{
+.m-botton {
   margin-bottom: 4rem;
 }
 
-.black{
+.black {
   color: #000000;
 }
 
-.text-center{
+.text-center {
   text-align: center;
+}
+
+.padding-right {
+  padding-right: 1rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 /*********************
  * SECTION PRINCIPAL * 
@@ -54,23 +63,23 @@
   justify-content: space-between;
 }
 
-.around{
+.around {
   justify-content: space-between;
 }
 
-.menu-icon{
-  width: 140px;
-  margin-left: 2em;
+.menu-icon {
+  margin-left: 20px;
+  width: 60px;
 }
 
-.idioma{
-  font-size: 50px;
-  margin-right: 1em;
+.idioma {
+  font-size: 20px;
   font-weight: 700;
+  margin-right: 20px;
   position: relative;
 }
 
-.menu-idioma{
+.menu-idioma {
   position: absolute;
   right: 0;
   top: 50px;
@@ -78,21 +87,21 @@
   display: none;
 }
 
-.menu-idioma label{
+.menu-idioma label {
   padding: 1rem;
 }
 
-.idioma:hover .menu-idioma{
+.idioma:hover .menu-idioma {
   display: flex;
   flex-direction: column;
 }
 
-.arrow{
+.arrow {
   width: 0.8em;
 }
 
 .fondo-translucido {
- /* background: black;
+  /* background: black;
   opacity: 0.7;
   */
   background: rgba(0, 0, 0, 0.62);
@@ -103,17 +112,18 @@
 .titulo {
   display: flex;
   justify-content: center;
+  height: 70%;
   align-items: center;
   flex-direction: column;
   color: white;
 }
 
 .logo {
-  font-size: 8em;
+  font-size: 3em;
 }
 
-.subtext{
-  font-size: 3em;
+.subtext {
+  font-size: 1em;
   text-align: center;
   margin-right: 1em;
   margin-left: 1em;
@@ -124,198 +134,181 @@
  * SECTION NOSOTROS * 
 *********************/
 
-.aboutus{
+.aboutus {
   background-image: url(../img/fondo2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 101vh;
   margin-top: -2px;
-}
-
-.justify-center{
   justify-content: center;
 }
 
-.justify-around{
-  justify-content: space-around;
+.infinity {
+  height: 100px;
+  margin-top: 1rem;
 }
 
-.infinity{
-  height: 200px;
-  margin-top: 2em;
-}
-
-.text-infinity{
+.text-infinity {
   display: flex;
-  font-size: 50px;
+  font-size: 20px;
   justify-content: center;
   text-align: center;
 }
 
-.color-text{
-  color: #04A5E7 !important;
+.color-text {
+  color: #04a5e7 !important;
   font-weight: bold !important;
 }
 
-.col{
+.col {
   flex-direction: column;
 }
 
-.texttitle{
-  font-family: 'Meera Inimai', sans-serif;
+.texttitle {
+  font-family: "Meera Inimai", sans-serif;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
-.m-left{
+.m-left {
   margin-left: -60px;
 }
 
-.margintitle{
-  margin: 1rem;
+.margintitle {
+  margin-bottom: 0.5rem;
 }
 
-.adorno{
-  width: 100px;
-  left: 70px;
-  top: 30px;
+.adorno {
+  left: 20px;
   position: relative;
+  top: 10px;
 }
 
-.fondotext{
+.fondotext {
   background: rgba(0, 0, 0, 0.62);
   border-radius: 20px;
+  padding: 0.5rem;
+  margin: 1rem;
   text-align: center;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-top: 2em;
-  padding: 2em;
-  margin-bottom: 3em;
 }
 
-.textabout{
+.textabout {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 16px;
 }
 
 .textabout p {
-  margin-bottom: 1em;
+  margin-bottom: 0.4rem;
 }
 
 /********************
  * SECTION POSIBLE * 
 *********************/
 
-.posible{
-  background-color: #FFFFFF;
+.posible {
+  background-color: #ffffff;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.ilustracion{
-  display: flex;
-  justify-content: center;
+.ilustracion-img {
+  width: 70%;
 }
 
-.ilustracion-img{
-  width: 80%;
-}
-
-.text-ilustracion{
-  color: #13152F;
-  font-size: 80px;
+.text-ilustracion {
+  color: #13152f;
+  font-size: 20px;
   margin-top: 1em;
-  margin-bottom: 2em;
-  margin-left: 1em;
-  margin-right: 1em;
+  width: 100%;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
 }
 
-#posible{
-  color: #12C2DD !important;
+#posible {
+  color: #12c2dd !important;
 }
 
 /********************
  * SECTION PROYECTOS * 
 *********************/
+.proyecto-title-container {
+  margin-bottom: 10px;
+}
 
-.proyectos{
-  background-color: #2F2E41;
+.proyectos {
+  background-color: #2f2e41;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-.titleproject{
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.imanes{
-  position: relative;
+.proyectos-img {
+  width: 50%;
   z-index: 1;
-  width: 80%;
 }
 
-.project-1{
-  background-color: white;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  padding: 0.7em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+.proyectos-name {
+  background-color: #fff;
   border-radius: 10px;
+  font-weight: 700;
+  padding: 1rem;
   position: relative;
-  bottom: 160px;
-  z-index: 0;
-}
-
-.project-1 *{
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
   color: black;
 }
 
-.proy-img-1{
-  height: 850px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.proyectos-name-container {
+  bottom: 15px;
+  position: relative;
+  z-index: 0;
 }
 
-.caracteristica{
-  font-family: 'Meera Inimai', sans-serif;  
-  font-size: 60px;
+.proy-img-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+}
+
+.estrecho {
+  position: relative;
+  top: 30px;
+}
+
+.size {
+  margin-right: 0.3em;
+  width: 32px;
+}
+
+.caracteristica {
+  font-family: "Meera Inimai", sans-serif;
+  font-size: 20px;
   font-weight: 400;
 }
 
-.cont-caract{
-  height: 160px;
+.cont-caract {
+  height: 40px;
   display: flex;
   align-items: center;
-}
-
-.size{
-  width: 100px;
-  margin-right: 0.3em;
 }
 
 /********************
  * SECTION CONTACTO * 
 *********************/
 
-.contact{
+.contact {
   background-image: url(../img/fondo3.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -324,75 +317,78 @@
   margin-top: -0.2rem;
 }
 
-.size-title{
+.size-title {
   height: 150px;
 }
 
-.margin-form{
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.form{
-  background-color: white;
+.margin-form {
   width: 90%;
+}
+
+.form {
+  background-color: #fff;
   border-radius: 10px;
-  padding: 3rem;
   display: flex;
   flex-direction: column;
-}
-
-.sub{
-  font-size: 40px;
-  margin-bottom: 3rem;
-}
-
-.invite{
-  font-size: 3rem;
-}
-
-.inputs{
-  height: 140px;
-  margin-bottom: 3rem;
-  border: 12px solid #575A89;
-  font-size: 40px;
-  padding-left: 20px;
-  color: #000000;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-
-.container-form{
   width: 100%;
+  margin-top: 1rem;
+}
+
+.sub {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.invite {
+  margin: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0rem !important;
+}
+
+.inputs {
+  border: 4px solid #575a89;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 0.9rem;
+  height: 34px;
+  padding-left: 20px;
+}
+
+.container-form {
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
-.labels{
+.labels {
+  font-size: 0.9rem;
   margin-left: 0.2rem;
-  font-size: 40px;
 }
 
-.button-send{
-  color: white;
-  box-sizing: border-box;
-  height: 100px;
-  border-width: 0px;
-  border-radius: 30px;
-  background-color: #575A89;
-  font-weight: bold;
-  padding: 3.8rem;
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
+.button-send {
   align-items: center;
+  background-color: #575a89;
+  border-radius: 15px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  justify-content: center;
+  padding: 0.6rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
 }
 
-.l-mesage{
-  height: 300px;
+.l-mesage {
+  margin: 0px 0px 12.7969px;
+  height: 70px;
 }
 
-.mini-section{
+.mini-section {
   height: 100vh;
 }
 
@@ -400,13 +396,13 @@
  * SECTION DONATION_FOOTER * 
 ***************************/
 
-.space-between-complete{
+.space-between-complete {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.footer{
+.footer {
   border-top: 5px solid white;
   background-color: rgba(0, 0, 0, 0.62);
   height: 30%;
@@ -416,76 +412,162 @@
   justify-content: space-between;
 }
 
-.donacion{
+.donacion {
   height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.donacion-panel{
+.donacion-panel {
   height: 40%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.62);
   border-radius: 10px;
 }
 
-.text-donation{
-  font-size: 3.5rem;
-  margin-bottom: 3rem;
+.text-donation {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
-.sub-donation{
-  font-size: 1.9rem;
+.sub-donation {
+  font-size: 0.8rem;
 }
 
-.r-socials{
+.r-socials {
   height: 80%;
 }
 
-.r-icons{
-  height: 100px;
-  width: 100px;
+.r-icons {
+  height: 30px;
+  width: 45px;
 }
 
-.r-socials-text{
-  font-size: 3.5rem;
-  margin-bottom: 3rem;
+.r-socials-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-.r-icons-container{
-  width: 50%;
+.r-icons-container {
+  width: 40%;
 }
 
-.r-icons-center{
+.r-icons-center {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.final-text{
+.final-text {
   height: 20%;
 }
 
-.copyright{
-  font-size: 3rem;
+.copyright {
+  font-size: 1rem;
 }
 
-.small-letter-container{
-}
-
-.donation-container{
-  height: 280px;
-}
-
-.m-icon-left{
+.m-icon-left {
   margin-left: 2.5rem;
 }
 
-.size-icon-p{
-  height: 95px;
+.size-icon-p {
+  height: 60px;
 }
 
-.margin-donation{
-  margin: 2.5rem;
+.margin-donation {
+  margin: 1rem;
+}
+
+nav {
+  display: none;
+}
+
+/************
+MEDIA QUERYS
+***********/
+
+/*********************
+ * SECTION PRINCIPAL * 
+*********************/
+
+@media (min-width: 600px) {
+  .menu-icon {
+    display: none;
+  }
+  .arrow {
+    width: 0.6em;
+  }
+  nav {
+    display: block;
+  }
+  ul.menu-list {
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: space-between;
+    list-style: none;
+    padding: 40px;
+    width: 300px;
+  }
+  .idioma {
+    margin-right: 40px;
+    font-size: 15px;
+  }
+  .r-icons-container {
+    width: 20%;
+  }
+  .donacion-panel {
+    width: 50%;
+  }
+  .margin-form {
+    width: 50%;
+  }
+  .inputs {
+    margin-bottom: 0.6rem;
+  }
+}
+
+/********************
+ * SECTION NOSOTROS * 
+*********************/
+
+@media (min-width: 600px) {
+  .about-div-2 {
+    width: 70%;
+  }
+  .ilustracion-img {
+    width: 40% !important;
+  }
+  .p-2 {
+    padding: 1rem !important;
+  }
+}
+
+@media (min-width: 500px) {
+  .imanes {
+    width: 40% !important;
+  }
+}
+
+@media (min-height: 500px) {
+  .margintitle {
+    margin-bottom: 1rem !important;
+  }
+  .fondotext {
+    padding: 1rem !important;
+  }
+  .textabout p {
+    margin-bottom: 1rem !important;
+  }
+}
+
+/********************
+ * SECTION PROYECTOS * 
+*********************/
+
+@media (min-width: 600px) {
+  .proyectos-img {
+    width: 20% !important;
+  }
 }
