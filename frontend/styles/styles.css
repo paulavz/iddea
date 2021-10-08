@@ -133,12 +133,14 @@
 /********************
  * SECTION NOSOTROS * 
 *********************/
-
-.aboutus {
+.aboutus-img {
   background-image: url(../img/fondo2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.aboutus {
+  background-color: black;
   height: 101vh;
   margin-top: -2px;
   justify-content: center;
@@ -307,12 +309,14 @@
 /********************
  * SECTION CONTACTO * 
 *********************/
-
-.contact {
+.contact-img {
   background-image: url(../img/fondo3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.contact {
+  background-color: black;
   height: 200vh;
   margin-top: -0.2rem;
 }
