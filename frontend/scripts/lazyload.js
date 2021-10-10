@@ -11,9 +11,7 @@ window.addEventListener("load", function (event) {
 			initImg.style.backgroundPosition = "center";
 			initImg.style.backgroundSize = "cover";
 			initImg.classList.add("principal-height");
-		})
-		.then(() => {
-			fondo1.classList.add("aboutus-img");
-			fondo2.classList.add("contact-img");
 		});
+	fondo1.classList.add("aboutus-img");
+	fondo2.classList.add("contact-img");
 });
