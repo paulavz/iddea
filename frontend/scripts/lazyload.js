@@ -10,6 +10,7 @@ window.addEventListener("load", function (event) {
 			initImg.style.background = `#f3f3f3 url(${url}) no-repeat`;
 			initImg.style.backgroundPosition = "center";
 			initImg.style.backgroundSize = "cover";
+			initImg.classList.add("principal-height");
 		})
 		.then(() => {
 			fondo1.classList.add("aboutus-img");
