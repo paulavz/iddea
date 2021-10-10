@@ -150,16 +150,27 @@
  * SECTION NOSOTROS * 
 *********************/
 .aboutus-img {
-  background-image: url(https://res.cloudinary.com/mismangas/image/upload/v1633895569/fondo2_l5d3jh.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 101vh;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  z-index: 0;
+  margin-top: -2px;
+}
+.about-height {
+  -moz-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 1;
 }
 .aboutus {
   background-color: black;
   height: 101vh;
   margin-top: -2px;
   justify-content: center;
+  background-image: url(../img/fondo2.lazy.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .infinity {
@@ -326,23 +337,38 @@
  * SECTION CONTACTO * 
 *********************/
 .contact-img {
-  background-image: url(https://res.cloudinary.com/mismangas/image/upload/v1633895590/fondo3_p5c5u3.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 200vh;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  z-index: 0;
+  margin-top: -0.2rem;
+}
+.contact-height {
+  -moz-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 1;
 }
 .contact {
   background-color: black;
   height: 200vh;
   margin-top: -0.2rem;
+  background-image: url(../img/fondo3.lazy.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .size-title {
   height: 150px;
 }
+.titleproject {
+  z-index: 1;
+}
 
 .margin-form {
   width: 90%;
+  z-index: 1;
 }
 
 .form {
@@ -427,6 +453,7 @@
   background-color: rgba(0, 0, 0, 0.62);
   height: 30%;
   width: 100%;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -444,6 +471,7 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.62);
   border-radius: 10px;
+  z-index: 1;
 }
 
 .text-donation {
