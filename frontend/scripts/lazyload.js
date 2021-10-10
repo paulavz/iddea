@@ -3,7 +3,9 @@ const fondo1 = document.getElementById("about");
 const fondo2 = document.getElementById("contact");
 
 window.addEventListener("load", function (event) {
-	fetch("https://iddea.herokuapp.com/images/rect853.png")
+	fetch(
+		"https://res.cloudinary.com/mismangas/image/upload/v1633895412/rect853_xiondx.png"
+	)
 		.then((resp) => resp.blob())
 		.then((blob) => {
 			const url = URL.createObjectURL(blob);

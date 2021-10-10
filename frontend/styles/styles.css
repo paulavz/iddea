@@ -150,7 +150,7 @@
  * SECTION NOSOTROS * 
 *********************/
 .aboutus-img {
-  background-image: url(../img/fondo2.png);
+  background-image: url(https://res.cloudinary.com/mismangas/image/upload/v1633895569/fondo2_l5d3jh.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -326,7 +326,7 @@
  * SECTION CONTACTO * 
 *********************/
 .contact-img {
-  background-image: url(../img/fondo3.png);
+  background-image: url(https://res.cloudinary.com/mismangas/image/upload/v1633895590/fondo3_p5c5u3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
