@@ -52,17 +52,15 @@
  * SECTION PRINCIPAL * 
 *********************/
 .principal-img-lazy {
-  background-image: url(../img/earth.lazy.jpg);
-}
-
-.principal-img {
-  background-image: url(../img/rect853.png);
+  background-image: url(../img/earth.lazy.png);
+  background-color: #2f2e41;
 }
 
 .principal {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #2f2e41;
   height: 100vh;
   display: flex;
   flex-direction: column;
