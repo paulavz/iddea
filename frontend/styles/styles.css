@@ -51,9 +51,15 @@
 /*********************
  * SECTION PRINCIPAL * 
 *********************/
+.principal-img-lazy {
+  background-image: url(../img/earth.lazy.jpg);
+}
+
+.principal-img {
+  background-image: url(../img/rect853.png);
+}
 
 .principal {
-  background-image: url(../img/rect853.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
