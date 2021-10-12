@@ -6,6 +6,11 @@
 		<title>IDDEA | Desarrollos Tecnológicos</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script
+			src="https://www.google.com/recaptcha/api.js"
+			async
+			defer
+		></script>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Meera+Inimai&display=swap"
 			rel="stylesheet"
@@ -204,7 +209,31 @@
 								required
 							></textarea>
 						</div>
-						<button class="button-send">ENVIAR</button>
+						<div
+							class="g-recaptcha margin"
+							data-sitekey="6Lf2y8McAAAAANlgBFao1chKYzIOq-OEhCVp3BvG"
+						></div>
+						<div id="error-message" class="error">
+							Captcha no válidado
+						</div>
+						<div id="error-success" class="success">
+							Mensaje enviado
+						</div>
+						<button
+							id="button-submit"
+							type="submit"
+							class="button-send"
+						>
+							ENVIAR
+							<div class="sk-chase">
+								<div class="sk-chase-dot"></div>
+								<div class="sk-chase-dot"></div>
+								<div class="sk-chase-dot"></div>
+								<div class="sk-chase-dot"></div>
+								<div class="sk-chase-dot"></div>
+								<div class="sk-chase-dot"></div>
+							</div>
+						</button>
 					</form>
 				</div>
 			</div>
