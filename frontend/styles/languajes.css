@@ -1,5 +1,5 @@
 .languaje-input {
-	display: none;
+  display: none;
 }
 
 .en {
@@ -16,12 +16,4 @@
 
 #es:checked ~ * .es {
   display: inline-block;
-}
-
-#en:checked ~ * .languaje-icon::after {
-  content: "EN";
-}
-
-#es:checked ~ * .languaje-icon::after {
-  content: "ES";
 }

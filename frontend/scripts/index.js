@@ -5,6 +5,8 @@ import "../styles/styles.css";
 import "../styles/languajes.css";
 import "../styles/infinity.css";
 import "./lazyload.js";
+import "./menu.js";
+import close from "../icons/close.svg";
 import menu from "../icons/menu.svg";
 import arrowdown from "../icons/arrow-down.svg";
 import infinito from "../img/infinito.svg";
