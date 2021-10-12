@@ -4,6 +4,13 @@
   color: white;
 }
 
+button {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
 .p-2 {
   padding: 1rem;
 }
@@ -64,8 +71,6 @@
 }
 
 .principal {
-  opacity: 0;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -80,6 +85,17 @@
 .menu-icon {
   margin-left: 20px;
   width: 60px;
+  z-index: 20;
+  transition: transform 500ms;
+}
+
+.menu-icon img {
+  height: 50px;
+}
+
+.menu-icon.open {
+  position: fixed;
+  transform: rotate(360deg);
 }
 
 .idioma {
@@ -92,13 +108,25 @@
 .menu-idioma {
   position: absolute;
   right: 0;
-  top: 50px;
-  padding-top: 10px;
+  top: 0px;
+  padding-top: 30px;
+  border-radius: 5px;
   display: none;
 }
 
 .menu-idioma label {
+  display: initial !important;
   padding: 1rem;
+  cursor: pointer;
+  background-color: #2f2e41;
+}
+
+#en:checked ~ * .menu-idioma .en {
+  background-color: #67658d;
+}
+
+#es:checked ~ * .menu-idioma .es {
+  background-color: #67658d;
 }
 
 .idioma:hover .menu-idioma {
@@ -493,10 +521,6 @@
   margin: 1rem;
 }
 
-nav {
-  display: none;
-}
-
 /************
 MEDIA QUERYS
 ***********/
@@ -505,6 +529,37 @@ MEDIA QUERYS
  * SECTION PRINCIPAL * 
 *********************/
 
+@media (max-width: 600px) {
+  .navigation {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: -100vh;
+    background-color: #2f2e41;
+    transition: top 500ms;
+    z-index: 10;
+  }
+
+  .navigation.open {
+    top: 0;
+  }
+
+  .menu-list {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Meera Inimai", sans-serif;
+  }
+}
+
 @media (min-width: 600px) {
   .menu-icon {
     display: none;
@@ -512,7 +567,7 @@ MEDIA QUERYS
   .arrow {
     width: 0.6em;
   }
-  nav {
+  .navigation {
     display: block;
   }
   ul.menu-list {
