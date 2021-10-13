@@ -55,6 +55,19 @@
   transition: opacity 1s ease-in-out;
 }
 
+ul {
+  padding-inline-start: 0 !important;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+}
+
 .menu-list > li {
   display: flex;
   flex-direction: column;
@@ -62,6 +75,7 @@
   align-items: center;
   font-family: "Meera Inimai", sans-serif;
   font-size: 18px;
+  padding: 0;
 }
 
 .menu-list > li:hover > .active {
@@ -516,7 +530,7 @@
   margin-top: 1rem;
 }
 
-.sub {
+.sub-title {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
