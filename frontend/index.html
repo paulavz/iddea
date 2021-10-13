@@ -25,37 +25,60 @@
 			checked
 		/>
 		<input type="radio" class="languaje-input" name="languaje" id="en" />
-
-		<section id="home" class="principal">
-			<div id="home-background" class="principal-new-background"></div>
-			<div class="fondo-translucido flex around">
-				<nav>
-					<ul class="menu-list">
-						<li>Nosotros</li>
-						<li>Proyectos</li>
-						<li>Apoyar</li>
-						<li>Contacto</li>
-					</ul>
-				</nav>
-				<img
-					class="menu-icon"
-					draggable="false"
-					src="images/menu.svg"
-				/>
-				<div class="idioma flex">
-					<p class="es">ES</p>
-					<p class="en">ES</p>
+		<div class="navegation">
+			<div class="nav-principal">
+				<div class="menu-top">
 					<img
-						class="arrow"
+						class="menu-icon-left"
+						id="menu"
 						draggable="false"
-						src="images/arrow-down.svg"
+						src="images/menu.svg"
 					/>
-					<div class="menu-idioma">
-						<label for="es">Español</label>
-						<label for="en">English</label>
+					<div class="idioma flex">
+						<p class="es">ES</p>
+						<p class="en">ES</p>
+						<img
+							class="arrow"
+							draggable="false"
+							src="images/arrow-down.svg"
+						/>
+						<div class="menu-idioma">
+							<label for="es">Español</label>
+							<label for="en">English</label>
+						</div>
 					</div>
 				</div>
+				<div class="menu-down">
+					<img
+						class="r-icons margin"
+						alt="instagram"
+						src="images/instagram.svg"
+					/>
+					<img
+						class="r-icons margin"
+						alt="linkedin"
+						src="images/linkedin.svg"
+					/>
+					<img
+						class="r-icons margin"
+						alt="facebook"
+						src="images/facebook.svg"
+					/>
+				</div>
 			</div>
+			<div id="menu-entry" class="menu-display">
+				<ul class="menu-list">
+					<li>Inicio <span class="sub"></span></li>
+					<li>Nosotros <span class="active"></span></li>
+					<li>Proyectos<span class="active"></span></li>
+					<li>Desarrollos<span class="active"></span></li>
+					<li>Contactanos<span class="active"></span></li>
+					<li>Apoyar<span class="sub"></span></li>
+				</ul>
+			</div>
+		</div>
+		<section id="home" class="principal">
+			<div id="home-background" class="principal-new-background"></div>
 			<div class="titulo">
 				<h1 class="logo">iddea</h1>
 				<h2 class="subtext en">
@@ -66,7 +89,6 @@
 					Ingeniería, diseño y desarrollos energéticos y ambientales
 				</p>
 			</div>
-			<div class="fondo-translucido"></div>
 		</section>
 		<section id="about" class="aboutus flex col">
 			<div id="about-background" class="aboutus-img"></div>
@@ -113,7 +135,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="posible">
+		<section id="posible" class="posible">
 			<img class="ilustracion-img" src="images/ilustracion.svg" />
 			<div>
 				<div class="text-ilustracion es">
@@ -125,7 +147,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="proyectos">
+		<section id="proyectos" class="proyectos">
 			<div class="proyecto-title-container">
 				<img class="adorno" draggable="false" src="images/adorno.svg" />
 				<h2 class="texttitle es">PROYECTOS</h2>
@@ -159,9 +181,9 @@
 				</div>
 			</div>
 		</section>
-		<section id="contact" class="contact">
+		<section class="contact">
 			<div id="contact-background" class="contact-img"></div>
-			<div class="mini-section col flex justify-center">
+			<div id="contact" class="mini-section col flex justify-center">
 				<div class="titleproject">
 					<div>
 						<img
@@ -237,7 +259,7 @@
 					</form>
 				</div>
 			</div>
-			<div class="mini-section space-between-complete">
+			<div id="apoyar" class="mini-section space-between-complete">
 				<div class="donacion">
 					<div class="flex col justify-center margin-donation">
 						<div class="donacion-panel">
