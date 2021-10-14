@@ -18,6 +18,10 @@ const clean = () => {
 		value.childNodes[2].classList.remove("whiteb");
 	});
 };
+
+const start = () => {
+	setTimeout(active, 400);
+};
 const active = () => {
 	let y = window.scrollY;
 	if (y >= home && y < about) {
@@ -63,10 +67,6 @@ const addClick = (element) => {
 	element.addEventListener("click", scrollAnimate);
 };
 
-const removeClick = (element) => {
-	element.addEventListener("click", scrollAnimate);
-};
-
 const changeIcon = () => {
 	menu.src = menu.src.endsWith("close.svg")
 		? "images/menu.svg"
@@ -86,4 +86,4 @@ const openMenu = () => {
 };
 
 menu.addEventListener("click", openMenu);
-window.addEventListener("scroll", active);
+window.addEventListener("scroll", start);
