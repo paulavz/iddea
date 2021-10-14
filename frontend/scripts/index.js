@@ -5,6 +5,7 @@ import "../styles/styles.css";
 import "../styles/languajes.css";
 import "../styles/infinity.css";
 import "./lazyload.js";
+import "./menu.js";
 import "./formContact";
 import "./menu.js";
 import close from "../icons/close.svg";

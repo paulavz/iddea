@@ -4,6 +4,121 @@
   color: white;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.whiteb {
+  background-color: white !important;
+  width: 100% !important;
+}
+.whites {
+  background-color: white !important;
+  width: 70% !important;
+}
+.navegation {
+  background: rgba(0, 0, 0, 0.62);
+  height: 100vh;
+  position: fixed;
+  width: 80px;
+  z-index: 2;
+  border-right: 1px solid white;
+  -moz-transition: width 400ms ease-in-out;
+  transition: width 400ms ease-in-out;
+  display: flex;
+}
+
+.nav-principal {
+  flex-direction: column;
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
+
+.menu-display {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 80px;
+  justify-content: center;
+  opacity: 0;
+}
+
+.menuentry {
+  opacity: 1;
+  -moz-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+ul {
+  padding-inline-start: 0 !important;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+}
+
+.menu-list > li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: "Meera Inimai", sans-serif;
+  font-size: 18px;
+  padding: 0;
+}
+
+.menu-list > li:hover > .active {
+  background-color: white;
+  width: 100%;
+}
+
+.menu-list > li:hover > .sub {
+  background-color: white;
+  width: 70%;
+}
+
+.sub {
+  width: 0%;
+  height: 1px;
+  margin-bottom: 15px;
+  -moz-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+}
+
+.active {
+  height: 1px;
+  margin-bottom: 15px;
+  width: 0%;
+  -moz-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+}
+
+.open-nav {
+  width: 250px;
+}
+
+.menu-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
 .error {
   color: white;
   margin: 5px;
@@ -45,6 +160,7 @@ button {
 
 .r-icons-b {
   width: 60px;
+  cursor: pointer;
 }
 
 .flex {
@@ -117,26 +233,22 @@ button {
   justify-content: space-between;
 }
 
-.menu-icon {
-  margin-left: 20px;
-  width: 60px;
+.menu-icon-left.open {
+  transform: rotate(180deg);
+}
+
+.menu-icon-left {
+  width: 55px;
+  height: 55px;
+  margin-top: 20px;
+  cursor: pointer;
   z-index: 20;
   transition: transform 500ms;
 }
 
-.menu-icon img {
-  height: 50px;
-}
-
-.menu-icon.open {
-  position: fixed;
-  transform: rotate(360deg);
-}
-
 .idioma {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
-  margin-right: 20px;
   position: relative;
 }
 
@@ -171,6 +283,7 @@ button {
 
 .arrow {
   width: 0.8em;
+  margin-left: 2px;
 }
 
 .fondo-translucido {
@@ -179,14 +292,13 @@ button {
   */
   background: rgba(0, 0, 0, 0.62);
   height: 15%;
-  z-index: 1;
   width: 100%;
 }
 
 .titulo {
   display: flex;
   justify-content: center;
-  height: 70%;
+  height: 100%;
   align-items: center;
   flex-direction: column;
   z-index: 1;
@@ -439,7 +551,7 @@ button {
   margin-top: 1rem;
 }
 
-.sub {
+.sub-title {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
@@ -554,6 +666,7 @@ button {
 .r-icons {
   height: 30px;
   width: 45px;
+  cursor: pointer;
 }
 
 .r-socials-text {
@@ -641,17 +754,12 @@ MEDIA QUERYS
     display: block;
   }
   ul.menu-list {
-    display: flex;
-    font-size: 15px;
-    font-weight: 700;
-    justify-content: space-between;
+    padding: 0;
     list-style: none;
-    padding: 40px;
-    width: 300px;
   }
   .idioma {
-    margin-right: 40px;
-    font-size: 15px;
+    font-size: 1rem;
+    margin-top: 10px;
   }
   .r-icons-container {
     width: 20%;
