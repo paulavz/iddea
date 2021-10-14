@@ -18,6 +18,7 @@ form.addEventListener("submit", (e) => {
 		setTimeout(function () {
 			error.classList.remove("block");
 		}, 2500);
+		button.disabled = false;
 		return;
 	}
 	let formData = {
@@ -42,11 +43,13 @@ form.addEventListener("submit", (e) => {
 				setTimeout(function () {
 					success.classList.remove("block");
 				}, 4000);
+				button.disabled = false;
 			}
 		})
 		.catch((error) => {
 			chase.classList.remove("block");
 			console.log("Error:", error);
+			button.disabled = false;
 		});
 });
 
