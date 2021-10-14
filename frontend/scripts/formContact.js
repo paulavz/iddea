@@ -25,7 +25,7 @@ form.addEventListener("submit", (e) => {
 		email: email.value,
 		message: message.value,
 	};
-	fetch("http://localhost:4200", {
+	fetch("https://iddea.herokuapp.com", {
 		method: "POST",
 		body: JSON.stringify(formData),
 		headers: {
