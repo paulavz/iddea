@@ -29,7 +29,7 @@
 		<section id="home" class="principal">
 			<div id="home-background" class="principal-new-background"></div>
 			<div class="fondo-translucido flex around">
-				<nav>
+				<nav id="menu" class="navigation">
 					<ul class="menu-list">
 						<li>Nosotros</li>
 						<li>Proyectos</li>
@@ -38,21 +38,22 @@
 					</ul>
 				</nav>
 				<img
+					id="menu-icon"
 					class="menu-icon"
 					draggable="false"
 					src="images/menu.svg"
 				/>
 				<div class="idioma flex">
 					<p class="es">ES</p>
-					<p class="en">ES</p>
+					<p class="en">EN</p>
 					<img
 						class="arrow"
 						draggable="false"
 						src="images/arrow-down.svg"
 					/>
 					<div class="menu-idioma">
-						<label for="es">Español</label>
-						<label for="en">English</label>
+						<label class="es" for="es">Español</label>
+						<label class="en" for="en">English</label>
 					</div>
 				</div>
 			</div>
