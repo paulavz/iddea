@@ -240,10 +240,54 @@ button {
 .menu-icon-left {
   width: 55px;
   height: 55px;
+  position: relative;
   margin-top: 20px;
   cursor: pointer;
   z-index: 20;
   transition: transform 500ms;
+}
+
+.menu-icon-left i,
+.menu-icon-left i:before,
+.menu-icon-left i:after {
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 35px;
+  height: 4px;
+  transition: all 500ms;
+}
+
+.menu-icon-left i:after,
+.menu-icon-left i:before {
+  content: "";
+}
+
+.menu-icon-left i {
+  top: 26px;
+  left: 10px;
+}
+
+.menu-icon-left i:before {
+  top: -10px;
+}
+
+.menu-icon-left i:after {
+  top: 10px;
+}
+
+.menu-icon-left.open i {
+  transform: rotate(45deg);
+}
+
+.menu-icon-left.open i:before {
+  top: 0;
+  opacity: 0;
+}
+
+.menu-icon-left.open i:after {
+  transform: rotate(-90deg);
+  top: 0;
 }
 
 .idioma {
