@@ -77,7 +77,6 @@ const openMenu = () => {
 	navegation.classList.toggle("open-nav");
 	menuentry.classList.toggle("menuentry");
 	menu.classList.toggle("open");
-	//setTimeout(changeIcon, 200);
 	ul.forEach((value) => {
 		value.childNodes[0].classList.toggle("not-active");
 		addClick(value);
