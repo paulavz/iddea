@@ -7,8 +7,6 @@ module.exports = {
   mode: "development",
   entry: {
     index: "./frontend/scripts/index.js",
-    menu: "./frontend/scripts/menu.js",
-    form: "./frontend/scripts/formContact.js",
   },
   output: {
     path: path.join(__dirname, "backend/public"),

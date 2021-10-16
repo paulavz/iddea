@@ -22,6 +22,8 @@ const backgroundInsert = (url, container, classImage) => {
 };
 
 window.addEventListener("load", function (event) {
+	import("./menu.js");
+	import("./formContact.js");
 	lazyLoad([initImg], "https://iddea.herokuapp.com/images/rect853.png", [
 		"principal-height",
 	]).then(() => {
