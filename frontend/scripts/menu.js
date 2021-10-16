@@ -23,6 +23,7 @@ const start = () => {
 	setTimeout(active, 400);
 };
 const active = () => {
+	let ready = false;
 	let y = window.scrollY;
 	if (y >= home && y < about) {
 		if (ul[0].childNodes[2].classList.contains("whites")) return;
@@ -48,6 +49,13 @@ const active = () => {
 		if (ul[5].childNodes[2].classList.contains("whites")) return;
 		clean();
 		ul[5].childNodes[2].classList.add("whites");
+	} else if (y >= contact) {
+		if (ready) {
+			return;
+		} else {
+			ready = true;
+			import("./recaptcha.js");
+		}
 	} else {
 		clean();
 	}
