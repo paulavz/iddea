@@ -30,7 +30,7 @@ const active = () => {
 		clean();
 		ul[0].childNodes[2].classList.add("whites");
 		return;
-	} else if (y >= contact) {
+	} else if (y >= proyectos) {
 		if (ready) {
 			return;
 		} else {
