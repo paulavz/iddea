@@ -710,6 +710,11 @@ button {
   font-weight: 600;
 }
 
+.container-text-donation {
+  display: flex;
+  flex-direction: column;
+}
+
 .sub-donation {
   font-size: 0.8rem;
 }
