@@ -1,0 +1,2 @@
+/*! For license information please see frontend_scripts_recaptcha_js.bundle.js.LICENSE.txt */
+(self.webpackChunkiddeasite=self.webpackChunkiddeasite||[]).push([["frontend_scripts_recaptcha_js"],{"./frontend/scripts/recaptcha.js":()=>{eval('var element = document.createElement("script");\nelement.src = "https://www.google.com/recaptcha/api.js";\ndocument.body.appendChild(element);\n\n//# sourceURL=webpack://iddeasite/./frontend/scripts/recaptcha.js?')}}]);

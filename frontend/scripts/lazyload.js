@@ -23,7 +23,9 @@ const backgroundInsert = (url, container, classImage) => {
 
 window.addEventListener("load", function (event) {
 	import("./menu.js");
-	import("./formContact.js");
+	import("./formContact.js").then(() => {
+		import("./recaptcha.js");
+	});
 	lazyLoad([initImg], "https://iddea.herokuapp.com/images/rect853.png", [
 		"principal-height",
 	]).then(() => {
@@ -33,7 +35,4 @@ window.addEventListener("load", function (event) {
 			["about-height", "contact-height"]
 		);
 	});
-	const element = document.createElement("script");
-	element.src = "https://www.google.com/recaptcha/api.js";
-	document.body.appendChild(element);
 });
