@@ -787,20 +787,6 @@ MEDIA QUERYS
   .navigation.open {
     top: 0;
   }
-
-  .menu-list {
-    height: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-family: "Meera Inimai", sans-serif;
-  }
 }
 
 @media (min-width: 600px) {
