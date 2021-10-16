@@ -23,5 +23,3 @@ import imanes from "../img/imanes.png";
 import fondo2 from "../img/fondo2.png";
 import fondo3 from "../img/fondo3.png";
 import earth from "../img/rect853.png";
-import "./menu";
-import "./formContact";
