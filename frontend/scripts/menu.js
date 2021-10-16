@@ -30,6 +30,13 @@ const active = () => {
 		clean();
 		ul[0].childNodes[2].classList.add("whites");
 		return;
+	} else if (y >= contact) {
+		if (ready) {
+			return;
+		} else {
+			ready = true;
+			import("./recaptcha.js");
+		}
 	} else if (y >= about && y < posible) {
 		if (ul[1].childNodes[2].classList.contains("whiteb")) return;
 		clean();
@@ -49,13 +56,6 @@ const active = () => {
 		if (ul[5].childNodes[2].classList.contains("whites")) return;
 		clean();
 		ul[5].childNodes[2].classList.add("whites");
-	} else if (y >= contact) {
-		if (ready) {
-			return;
-		} else {
-			ready = true;
-			import("./recaptcha.js");
-		}
 	} else {
 		clean();
 	}
