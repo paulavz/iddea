@@ -22,22 +22,22 @@ const clean = () => {
 const start = () => {
 	setTimeout(active, 400);
 };
+
 const active = () => {
 	let ready = false;
 	let y = window.scrollY;
+	if (y >= proyectos) {
+		if (ready === false) {
+			ready = true;
+			import("./recaptcha.js");
+		}
+	}
 	if (y >= home && y < about) {
 		if (ul[0].childNodes[2].classList.contains("whites")) return;
 		clean();
 		ul[0].childNodes[2].classList.add("whites");
 		return;
-	} else if (y >= proyectos) {
-		if (ready) {
-			return;
-		} else {
-			ready = true;
-			import("./recaptcha.js");
-		}
-	} else if (y >= about && y < posible) {
+	} else if (y >= about && y < proyectos) {
 		if (ul[1].childNodes[2].classList.contains("whiteb")) return;
 		clean();
 		ul[1].childNodes[2].classList.add("whiteb");
