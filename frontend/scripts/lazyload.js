@@ -7,29 +7,31 @@ const lazyLoad = (container, urlImage, classImage) => {
 		.then((resp) => resp.blob())
 		.then((blob) => {
 			const url = URL.createObjectURL(blob);
-			container.style.background = `#f3f3f3 url(${url}) no-repeat`;
-			container.style.backgroundPosition = "center";
-			container.style.backgroundSize = "cover";
-			container.classList.add(classImage);
+			backgroundInsert(url, container[0], classImage[0]);
+			if (container[1]) {
+				backgroundInsert(url, container[1], classImage[1]);
+			}
 		});
 };
 
+const backgroundInsert = (url, container, classImage) => {
+	container.style.background = `#f3f3f3 url(${url}) no-repeat`;
+	container.style.backgroundPosition = "center";
+	container.style.backgroundSize = "cover";
+	container.classList.add(classImage);
+};
+
 window.addEventListener("load", function (event) {
-	lazyLoad(
-		initImg,
-		"https://iddea.herokuapp.com/images/rect853.png",
-		"principal-height"
-	).then(() => {
+	lazyLoad([initImg], "https://iddea.herokuapp.com/images/rect853.png", [
+		"principal-height",
+	]).then(() => {
 		lazyLoad(
-			fondo1,
-			"https://iddea.herokuapp.com/images/fondo2.png",
-			"about-height"
-		).then(() => {
-			lazyLoad(
-				fondo2,
-				"https://iddea.herokuapp.com/images/fondo3.png",
-				"contact-height"
-			);
-		});
+			[fondo1, fondo2],
+			"https://iddea.herokuapp.com/images/fondo3.png",
+			["about-height", "contact-height"]
+		);
 	});
+	const element = document.createElement("script");
+	element.src = "https://www.google.com/recaptcha/api.js";
+	document.body.appendChild(element);
 });
