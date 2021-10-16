@@ -4,9 +4,7 @@
 import "../styles/styles.css";
 import "../styles/languajes.css";
 import "../styles/infinity.css";
-import "./lazyload.js";
-//import "./menu.js";
-//import "./formContact";
+import "./lazyload";
 import close from "../icons/close.svg";
 import menu from "../icons/menu.svg";
 import arrowdown from "../icons/arrow-down.svg";
@@ -25,3 +23,5 @@ import imanes from "../img/imanes.png";
 import fondo2 from "../img/fondo2.png";
 import fondo3 from "../img/fondo3.png";
 import earth from "../img/rect853.png";
+import "./menu";
+import "./formContact";
