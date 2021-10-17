@@ -21,14 +21,11 @@
   width: 70% !important;
 }
 .navegation {
-  background: rgba(0, 0, 0, 0.62);
-  height: 100vh;
   position: fixed;
-  width: 60px;
+  background: rgba(0, 0, 0, 0.62);
   z-index: 2;
-  border-right: 1px solid white;
-  -moz-transition: width 400ms ease-in-out;
-  transition: width 400ms ease-in-out;
+  -moz-transition: width 400ms ease-in-out, height 400ms ease-in-out;
+  transition: width 400ms ease-in-out, height 400ms ease-in-out;
   display: flex;
 }
 
@@ -109,7 +106,7 @@ li > a {
 }
 
 .open-nav {
-  width: 210px;
+  width: 210px !important;
 }
 
 .menu-top {
@@ -780,10 +777,6 @@ button {
   top: 0;
 }
 
-.nav-resp {
-  display: none;
-}
-
 /************
 MEDIA QUERYS
 ***********/
@@ -794,20 +787,48 @@ MEDIA QUERYS
 
 @media (max-width: 600px) {
   .navegation {
-    display: none !important;
-  }
-  .idioma {
-    padding: 0.5rem !important;
-  }
-  .nav-resp {
     display: flex !important;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.62);
     border-bottom: 1px solid white;
-    position: fixed;
     width: 100%;
+    height: 60px;
     z-index: 10;
+  }
+  .menu-top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu-down {
+    display: none;
+  }
+  .menu-idioma {
+    left: auto;
+    right: 0;
+  }
+  .nav-principal {
+    display: block;
+    width: inherit;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .open-nav {
+    width: 100% !important;
+    height: 100vh;
+  }
+  .menu-display {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .menuentry {
+    z-index: 10;
+  }
+  .idioma {
+    padding: 0.5rem !important;
   }
   .menu-icon-left {
     margin-top: 0px !important;
@@ -815,14 +836,14 @@ MEDIA QUERYS
 }
 
 @media (min-width: 600px) {
-  .menu-icon {
-    display: none;
-  }
   .arrow {
     width: 0.6em;
   }
-  .navigation {
-    display: block;
+  .navegation {
+    height: 100vh;
+    width: 60px;
+    z-index: 2;
+    border-right: 1px solid white;
   }
   ul.menu-list {
     padding: 0;

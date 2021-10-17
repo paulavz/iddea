@@ -8,7 +8,6 @@ const apoyar = document.getElementById("apoyar").offsetTop;
 const screenBody = document.documentElement.scrollHeight;
 /**************/
 const menu = document.getElementById("menu");
-const menu2 = document.getElementById("menu2");
 const navegation = document.querySelector(".navegation");
 const menuentry = document.getElementById("menu-entry");
 const ul = document.querySelectorAll("ul.menu-list")[0].childNodes;
@@ -70,6 +69,9 @@ const scrollAnimate = (e) => {
 		top: offsetTop,
 		behavior: "smooth",
 	});
+	if (window.innerWidth < 600) {
+		setTimeout(openMenu, 600);
+	}
 };
 
 const addClick = (element) => {
@@ -80,7 +82,6 @@ const openMenu = () => {
 	navegation.classList.toggle("open-nav");
 	menuentry.classList.toggle("menuentry");
 	menu.classList.toggle("open");
-	menu2.classList.toggle("open");
 	ul.forEach((value) => {
 		value.childNodes[0].classList.toggle("not-active");
 		addClick(value);
