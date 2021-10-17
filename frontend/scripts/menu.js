@@ -8,6 +8,7 @@ const apoyar = document.getElementById("apoyar").offsetTop;
 const screenBody = document.documentElement.scrollHeight;
 /**************/
 const menu = document.getElementById("menu");
+const menu2 = document.getElementById("menu2");
 const navegation = document.querySelector(".navegation");
 const menuentry = document.getElementById("menu-entry");
 const ul = document.querySelectorAll("ul.menu-list")[0].childNodes;
@@ -75,16 +76,11 @@ const addClick = (element) => {
 	element.addEventListener("click", scrollAnimate);
 };
 
-const changeIcon = () => {
-	menu.src = menu.src.endsWith("close.svg")
-		? "images/menu.svg"
-		: "images/close.svg";
-};
-
 const openMenu = () => {
 	navegation.classList.toggle("open-nav");
 	menuentry.classList.toggle("menuentry");
 	menu.classList.toggle("open");
+	menu2.classList.toggle("open");
 	ul.forEach((value) => {
 		value.childNodes[0].classList.toggle("not-active");
 		addClick(value);

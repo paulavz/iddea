@@ -764,6 +764,26 @@ button {
   margin: 1rem;
 }
 
+.navigation {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: -100vh;
+  background-color: #2f2e41;
+  transition: top 500ms;
+  z-index: 10;
+}
+
+.navigation.open {
+  top: 0;
+}
+
+.nav-resp {
+  display: none;
+}
+
 /************
 MEDIA QUERYS
 ***********/
@@ -773,19 +793,24 @@ MEDIA QUERYS
 *********************/
 
 @media (max-width: 600px) {
-  .navigation {
+  .navegation {
+    display: none !important;
+  }
+  .idioma {
+    padding: 0.5rem !important;
+  }
+  .nav-resp {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.62);
+    border-bottom: 1px solid white;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: -100vh;
-    background-color: #2f2e41;
-    transition: top 500ms;
+    width: 100%;
     z-index: 10;
   }
-
-  .navigation.open {
-    top: 0;
+  .menu-icon-left {
+    margin-top: 0px !important;
   }
 }
 
