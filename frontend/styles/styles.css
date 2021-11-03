@@ -12,6 +12,10 @@
   margin-right: 35px;
 }
 
+.margin-r {
+  margin-right: 10px;
+}
+
 .whiteb {
   background-color: white !important;
   width: 100% !important;
@@ -332,6 +336,13 @@ button {
   margin-left: 2px;
 }
 
+.arrow-menu {
+  width: 0.6em;
+  position: relative;
+  left: 55px;
+  bottom: 13px;
+}
+
 .fondo-translucido {
   /* background: black;
   opacity: 0.7;
@@ -431,6 +442,13 @@ button {
   left: 20px;
   position: relative;
   top: 10px;
+}
+
+.adorno-logo {
+  position: relative;
+  left: 20px;
+  top: 5px;
+  width: 50px;
 }
 
 .fondotext {

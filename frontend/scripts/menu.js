@@ -75,7 +75,9 @@ const scrollAnimate = (e) => {
 };
 
 const addClick = (element) => {
-	element.addEventListener("click", scrollAnimate);
+	if (!element.firstChild.classList.contains("margin-r")) {
+		element.addEventListener("click", scrollAnimate);
+	}
 };
 
 const openMenu = () => {
