@@ -16,6 +16,7 @@ const clean = () => {
 	ul.forEach((value) => {
 		value.childNodes[2].classList.remove("whites");
 		value.childNodes[2].classList.remove("whiteb");
+		value.childNodes[2].classList.remove("whitec");
 	});
 };
 
@@ -38,14 +39,19 @@ const active = () => {
 		ul[0].childNodes[2].classList.add("whites");
 		return;
 	} else if (y >= about && y < proyectos) {
-		if (ul[1].childNodes[2].classList.contains("whiteb")) return;
+		if (ul[1].childNodes[2].classList.contains("whitec")) return;
 		clean();
-		ul[1].childNodes[2].classList.add("whiteb");
+		ul[1].childNodes[2].classList.add("whitec");
 		return;
-	} else if (y >= proyectos && y < contact) {
-		if (ul[2].childNodes[2].classList.contains("whiteb")) return;
+	} else if (y >= proyectos && y < posible) {
+		if (ul[2].childNodes[2].classList.contains("whitec")) return;
 		clean();
-		ul[2].childNodes[2].classList.add("whiteb");
+		ul[2].childNodes[2].classList.add("whitec");
+		return;
+	} else if(y >= posible && y < contact){
+		if (ul[3].childNodes[2].classList.contains("whiteb")) return;
+		clean();
+		ul[3].childNodes[2].classList.add("whiteb");
 		return;
 	} else if (y >= contact && y < apoyar - 20) {
 		if (ul[4].childNodes[2].classList.contains("whiteb")) return;
@@ -75,9 +81,7 @@ const scrollAnimate = (e) => {
 };
 
 const addClick = (element) => {
-	if (!element.firstChild.classList.contains("margin-r")) {
-		element.addEventListener("click", scrollAnimate);
-	}
+	element.addEventListener("click", scrollAnimate);
 };
 
 const openMenu = () => {
