@@ -63,7 +63,7 @@ const active = () => {
 
 const scrollAnimate = (e) => {
 	e.preventDefault();
-	const href = e.path[0].getAttribute("href");
+	const href = e.path[0].closest("a").getAttribute("href");
 	const offsetTop = document.querySelector(href).offsetTop;
 	scroll({
 		top: offsetTop,
