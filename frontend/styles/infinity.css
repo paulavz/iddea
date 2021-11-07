@@ -1,0 +1,10 @@
+.about-div-1 {
+	height: 20%;
+	margin-bottom: 10px;
+	z-index: 1;
+}
+
+.about-div-2 {
+	max-height: 60%;
+	z-index: 1;
+}
