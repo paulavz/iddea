@@ -1,4 +1,4 @@
-/*IDs*/
+/*Posiciones*/
 const home = document.getElementById("home").offsetTop;
 const about = document.getElementById("about").offsetTop;
 const posible = document.getElementById("posible").offsetTop;
@@ -10,13 +10,14 @@ const screenBody = document.documentElement.scrollHeight;
 const menu = document.getElementById("menu");
 const navegation = document.querySelector(".navegation");
 const menuentry = document.getElementById("menu-entry");
-const ul = document.querySelectorAll("ul.menu-list")[0].childNodes;
+const ul = document.querySelector("ul.menu-list").childNodes;
 
 const clean = () => {
 	ul.forEach((value) => {
-		value.childNodes[2].classList.remove("whites");
-		value.childNodes[2].classList.remove("whiteb");
-		value.childNodes[2].classList.remove("whitec");
+		const sub = value.querySelector(".underline").classList;
+		sub.remove("whites");
+		sub.remove("whiteb");
+		sub.remove("whitec");
 	});
 };
 
@@ -34,34 +35,34 @@ const active = () => {
 		}
 	}
 	if (y >= home && y < about) {
-		if (ul[0].childNodes[2].classList.contains("whites")) return;
+		if (ul[0].querySelector(".underline").classList.contains("whites")) return;
 		clean();
-		ul[0].childNodes[2].classList.add("whites");
+		ul[0].querySelector(".underline").classList.add("whites");
 		return;
 	} else if (y >= about && y < proyectos) {
-		if (ul[1].childNodes[2].classList.contains("whitec")) return;
+		if (ul[1].querySelector(".underline").classList.contains("whitec")) return;
 		clean();
-		ul[1].childNodes[2].classList.add("whitec");
+		ul[1].querySelector(".underline").classList.add("whitec");
 		return;
 	} else if (y >= proyectos && y < posible) {
-		if (ul[2].childNodes[2].classList.contains("whitec")) return;
+		if (ul[2].querySelector(".underline").classList.contains("whitec")) return;
 		clean();
-		ul[2].childNodes[2].classList.add("whitec");
+		ul[2].querySelector(".underline").classList.add("whitec");
 		return;
-	} else if(y >= posible && y < contact){
-		if (ul[3].childNodes[2].classList.contains("whiteb")) return;
+	} else if (y >= posible && y < contact) {
+		if (ul[3].querySelector(".underline").classList.contains("whiteb")) return;
 		clean();
-		ul[3].childNodes[2].classList.add("whiteb");
+		ul[3].querySelector(".underline").classList.add("whiteb");
 		return;
 	} else if (y >= contact && y < apoyar - 20) {
-		if (ul[4].childNodes[2].classList.contains("whiteb")) return;
+		if (ul[4].querySelector(".underline").classList.contains("whiteb")) return;
 		clean();
-		ul[4].childNodes[2].classList.add("whiteb");
+		ul[4].querySelector(".underline").classList.add("whiteb");
 		return;
 	} else if (y >= apoyar) {
-		if (ul[5].childNodes[2].classList.contains("whites")) return;
+		if (ul[5].querySelector(".underline").classList.contains("whites")) return;
 		clean();
-		ul[5].childNodes[2].classList.add("whites");
+		ul[5].querySelector(".underline").classList.add("whites");
 	} else {
 		clean();
 	}
@@ -69,7 +70,8 @@ const active = () => {
 
 const scrollAnimate = (e) => {
 	e.preventDefault();
-	const href = e.path[0].getAttribute("href");
+	const link = e.target.closest(".menu-list a");
+	const href = link.getAttribute("href");
 	const offsetTop = document.querySelector(href).offsetTop;
 	scroll({
 		top: offsetTop,
@@ -80,18 +82,14 @@ const scrollAnimate = (e) => {
 	}
 };
 
-const addClick = (element) => {
-	element.addEventListener("click", scrollAnimate);
-};
-
 const openMenu = () => {
 	navegation.classList.toggle("open-nav");
 	menuentry.classList.toggle("menuentry");
 	menu.classList.toggle("open");
 	ul.forEach((value) => {
 		value.childNodes[0].classList.toggle("not-active");
-		addClick(value);
 	});
+	menuentry.addEventListener("click", scrollAnimate);
 	active();
 };
 
